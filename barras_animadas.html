@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vista/barras_animadas.css">
+    <title>Barras</title>
+</head>
+<body>
+    <div id="primer_objeto" class="primer_objeto">
+        <div class="fondo_primer_objeto">
+            <img id="img_fondo_primer_objeto" src="vista/fondo_primer_objeto.png">
+        </div>
+        <div id="contenedor_columna_menu">
+            <div id="recuadros_columna_izquierda_primaria" class="recuadros_columna_izquierda" onclick="mostrarContenedorOpcionPrincipal()">Ü</div>
+            <div id="recuadros_columna_izquierda_secundaria" class="recuadros_columna_izquierda" onclick="mostrarContenedorOpcionSecundario()">╝</div>
+            <div id="recuadros_columna_izquierda_terciaria" class="recuadros_columna_izquierda" onclick="mostrarContenedorOpcionTerciario()">╝</div>
+            <div id="recuadros_columna_izquierda_cuaternaria" class="recuadros_columna_izquierda" onclick="mostrarContenedorOpcionCuaternario()">╝</div>
+        </div>
+        <div style="display: flex;" id="contenedor_opcion_principal" class="opciones_principales">
+            <div class="menu_superior">
+                <div id="objeto_superior_primario" class="objetos_superiores" onclick="mostrarMenuTituloPrimario()">
+                    <div class="contenido_objeto" id="contenido_primario">
+                        <p id="" class="p_titulo_contenido_objeto">Registrar Contacto</p>
+                    </div>
+                </div>
+                <div id="objeto_superior_secundario" class="objetos_superiores" onclick="mostrarMenuTituloSecundario()">
+                    <div class="contenido_objeto" id="contenido_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo 2</p>   
+                    </div>
+                </div>      
+                <div id="objeto_superior_secundario" class="objetos_superiores" onclick="mostrarMenuTituloTerciario()">
+                    <div class="contenido_objeto" id="contenido_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo 3</p>   
+                    </div>
+                </div>      
+                <div id="objeto_superior_secundario" class="objetos_superiores" onclick="mostrarMenuTituloCuaternario()">
+                    <div class="contenido_objeto" id="contenido_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo 4</p>   
+                    </div>
+                </div>      
+            </div>
+            <div style="display: flex;" class="contenido_opción_menu">
+                <div style="display: flex;" class="formulario_menu" id="menu_contenido_primario" >
+                    <div class="contenido_formulario">
+                        <div class="titulo_input" id="titulo_formulario_registro_contacto">
+                            <P class="p_titulo_input" id="p_titulo_formulario_primario">Registrar Contacto</P>
+                        </div>
+                        <div  class="ocultar_ventana" >
+                            <div id="btn_ocultar_menu" class="contenido_objeto" onclick="ocultarMenus()">
+                                <p class="p_minimizar_menu" class="p_titulo_contenido_objeto">X</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenido_formulario">
+                        <div class="objeto_input">
+                            <div class="titulo_input">
+                                <P class="p_titulo_input">Nombre Contacto</P>
+                            </div>
+                            <div class="div_input_formulario">
+                                <input type="text" class="input_formulario" id="nombre_contacto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenido_formulario">
+                        <div class="objeto_input">
+                            <div class="titulo_input">
+                                <P class="p_titulo_input">Clase contacto</P>
+                            </div>
+                            <div class="div_input_formulario">
+                                <select name="select_clase_contacto" id="clase_contacto">
+                                    <option value="produccion">Producción</option>
+                                    <option value="planta">Planta</option>
+                                    <option value="proyecto">Proyecto</option>
+                                    <option value="temporal">Temporal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenido_formulario">
+                        <div class="objeto_input">
+                            <div class="titulo_input">
+                                <P class="p_titulo_input">Teléfono Celular contacto</P>
+                            </div>
+                            <div class="div_input_formulario">
+                                <input type="text" class="input_formulario" id="tel_celular_contacto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenido_formulario">
+                        <div class="objeto_input">
+                            <div class="titulo_input">
+                                <P class="p_titulo_input">Seleccionar Imagen</P>
+                            </div>
+                            <div class="div_input_formulario">
+                                <input type="file" class="input_formulario" id="input_img_formulario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario" onclick="registrarNombreContacto()"></div>
+                </div>
+                <div class="formulario_menu" id="menu_contenido_secundario">
+                    <div class="contenido_formulario">2222</div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario" ></div>
+                </div>
+                <div class="formulario_menu" id="menu_contenido_terciario">
+                    <div class="contenido_formulario">3333</div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                </div>
+                <div class="formulario_menu" id="menu_contenido_cuaternario">
+                    <div class="contenido_formulario">4444</div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor_opcion_secundaria" class="opciones_principales">
+            <div id="menu_segunda_sección" class="menu_superior">
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                      <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>                
+                <div class="objetos_superiores">
+                    <div class="contenido_objeto_menu_superior_principal_secundario">
+                        <p id="" class="p_titulo_contenido_objeto">titulo titulo</p>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido_opción_menu_secundario">
+                <div class="formulario_menu_secundario" id="formulario_registro">
+                    <div class="contenido_formulario" ></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                    <div class="contenido_formulario"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor_opcion_terciaria" class="opciones_principales">
+            <div class="contenido_opcion_terciario"></div>
+        </div>
+        <div id="contenedor_opcion_cuaternaria" class="opciones_principales">
+            <div class="contenido_opcion_cuaternario"></div>
+        </div>
+    </div>
+</body>
+<script src="controlador/barras_animadas.js"></script>
+</html>
